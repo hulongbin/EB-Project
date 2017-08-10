@@ -17,6 +17,13 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
+
+//	@RequestMapping(value = "/hi")
+//	public String hi(@RequestParam String name){
+//		return userService.hiService(name);
+//	}
+
+
 	@RequestMapping(value = "index", method = RequestMethod.GET)
 	public String index() {
 		return "index";

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/domain/domain.iml" filepath="$PROJECT_DIR$/domain/domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-ribbon/service-ribbon.iml" filepath="$PROJECT_DIR$/service-ribbon/service-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-eurekaserver/spring-cloud-eurekaserver.iml" filepath="$PROJECT_DIR$/spring-cloud-eurekaserver/spring-cloud-eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-eurekaserver/spring-eurekaserver.iml" filepath="$PROJECT_DIR$/spring-eurekaserver/spring-eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
