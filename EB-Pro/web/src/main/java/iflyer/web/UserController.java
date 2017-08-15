@@ -1,7 +1,7 @@
 package iflyer.web;
 
 import iflyer.model.User;
-import iflyer.service.UserService;
+import iflyer.ribbon.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -16,12 +16,6 @@ import org.springframework.web.servlet.ModelAndView;
 public class UserController {
 	@Autowired
 	UserService userService;
-
-
-//	@RequestMapping(value = "/hi")
-//	public String hi(@RequestParam String name){
-//		return userService.hiService(name);
-//	}
 
 
 	@RequestMapping(value = "index", method = RequestMethod.GET)
@@ -46,11 +40,3 @@ public class UserController {
 	}
 
 }
-
-//@Controller
-//public class HelloController {
-//    @RequestMapping("/index")
-//    public String index(){
-//        return "index";
-//    }
-//}

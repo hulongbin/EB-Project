@@ -1,5 +1,6 @@
 package iflyer;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -7,16 +8,21 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by Vivian on 17/8/06.
  */
-@EnableEurekaServer
+//@EnableEurekaServer
 @SpringBootApplication
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@EnableDiscoveryClient
+//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@RestController
+//@MapperScan("iflyer.dao")
 public class IflyerApplication {
 
     protected static Logger logger=LoggerFactory.getLogger(IflyerApplication.class);

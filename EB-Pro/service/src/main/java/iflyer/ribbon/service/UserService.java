@@ -1,4 +1,4 @@
-package iflyer.service;
+package iflyer.ribbon.service;
 
 import iflyer.dao.UserDao;
 import iflyer.model.User;

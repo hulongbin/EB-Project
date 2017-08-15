@@ -2,7 +2,7 @@
 //
 //import iflyer.activemq.MsgSender;
 //import iflyer.model.User;
-//import iflyer.service.UserService;
+//import UserService;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.jms.core.JmsTemplate;
 //import org.springframework.stereotype.Controller;

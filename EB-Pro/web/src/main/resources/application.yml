@@ -1,0 +1,21 @@
+server:
+  port: 60001
+spring:
+  activemq:
+    broker-url: tcp://106.14.253.83:61616
+  #添加信任的包名，如果不添加，消费者获取对象反序列化时会报错
+  packages:
+      trusted: iflyer.model
+  application:
+    name: EB-PRO
+  profiles:
+    active: dev
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.124:10001/eureka/ #注册 中心已经开启认证
+#  instance:
+#    lease-expiration-duration-in-seconds: 20
+#    lease-renewal-interval-in-seconds: 10
+#  server:
+#    log-identity-headers: true

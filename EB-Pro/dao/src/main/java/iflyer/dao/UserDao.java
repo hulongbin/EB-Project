@@ -20,13 +20,13 @@ import java.util.List;
 public class UserDao {
 	@Autowired
 	private SqlSessionTemplate sqlSessionTemplate;
-	//@Insert("insert into t_user(username,age) values(#{userName,jdbcType=VARCHAR},#{age,jdbcType=INTEGER})")
+	@Insert("insert into t_user(username,age) values(#{userName,jdbcType=VARCHAR},#{age,jdbcType=INTEGER})")
 	public User save(User user) {
 		this.sqlSessionTemplate.insert("save", user);
 		return user;
 	}
 
-	//@Select("select * from t_user where id = #{id,jdbcType=INTEGER}")
+	@Select("select * from t_user where id = #{id,jdbcType=INTEGER}")
 	public User selectById(Integer id) {
 		return this.sqlSessionTemplate.selectOne("selectById", id);
 	}
