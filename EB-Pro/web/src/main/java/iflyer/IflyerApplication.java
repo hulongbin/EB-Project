@@ -20,9 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 //@EnableEurekaServer
 @SpringBootApplication
 @EnableDiscoveryClient
-//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @RestController
-//@MapperScan("iflyer.dao")
 public class IflyerApplication {
 
     protected static Logger logger=LoggerFactory.getLogger(IflyerApplication.class);
